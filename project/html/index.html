@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--
+author:  bonnie cheng
+date:    06/16/2024
+version: 1.0
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" media="all">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="flex-container" id="wrapper">
+        <header>
+            <div>
+                <h1>Dice Game</h1>
+            </div>
+        </header>
+        <main>
+            <div id="game-board">
+                <div id="player-board">
+                    <h2>Player</h2>
+                    <div id="player-dice" class="dice-container">
+                        <img src="../images/dice-1.png" alt="Player Dice 1" class="dice">
+                        <img src="../images/dice-1.png" alt="Player Dice 2" class="dice">
+                    </div>
+                    <p id="player-round-score">Round Score: 0</p>
+                    <p id="player-total-score">Total Score: 0</p>
+                </div>
+                <div id="computer-board">
+                    <h2>Computer</h2>
+                    <div id="computer-dice" class="dice-container">
+                        <img src="../images/dice-1.png" alt="Computer Dice 1" class="dice">
+                        <img src="../images/dice-1.png" alt="Computer Dice 2" class="dice">
+                    </div>
+                    <p id="computer-round-score">Round Score: 0</p>
+                    <p id="computer-total-score">Total Score: 0</p>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="roll-dice">Roll Dice</button>
+                <button id="reset-game">Reset Game</button>
+            </div>
+            <div id="result"></div>
+        </main>
+        <footer class="flex-container">
+            <div>
+                <p>Bonnie Cheng</p>
+            </div>
+            <div>
+                <p>COMP2132</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
